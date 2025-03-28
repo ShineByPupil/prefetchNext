@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         E站预加载下一页
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0
+// @version      1.0.1
 // @license      GPL-3.0
 // @description  自动预加载E站下一页画廊图片资源，提升浏览流畅度
 // @author       ShineByPupil
@@ -31,7 +31,7 @@
   idleCallback(async (deadline) => {
     try {
       // 兼容性检查：确保存在 nexturl 属性
-      if (!window.hasOwnProperty('nexturl')) {
+      if (!window.nexturl) {
         return console.warn('[预加载] 没有找到 nexturl 参数')
       }
 
