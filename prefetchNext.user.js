@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         E站，提前加载下一页图片资源
+// @name         E站预加载下一页
 // @namespace    http://tampermonkey.net/
 // @version      1.0.0
 // @license      GPL-3.0
